@@ -16,6 +16,9 @@ import TreasurerHomeScreen from "./TreasurerHomeScreen";
 import { useNavigation } from "@react-navigation/native";
 
 const TreasurerSignIn = ({ navigation }) => {
+	const navigateToTreasurerHomeScreen = () => {
+		navigation.navigate("Home");
+	};
 	const [userName, setUserName] = useState("");
 	const [password, setPassword] = useState("");
 
@@ -30,7 +33,7 @@ const TreasurerSignIn = ({ navigation }) => {
 			password.length > 7
 		) {
 			// !isNaN(parseInt(str)) -> returns true if phone number consists entirely of numbers
-			navigation.navigate("CoachSchedules", { user: userName });
+			navigation.navigate("TreasurerHomeScreen", { user: userName });
 		} else if (!(userName.substring(0, 2) === "TR")) {
 			navigation.navigate("TryAgainCreatingAcc", {
 				err: "Please ensure you enter a valid username and have been signed up for a treasurer account",
@@ -42,14 +45,8 @@ const TreasurerSignIn = ({ navigation }) => {
 				msg: "You are not logged in.",
 			});
 		} else {
-			navigation.navigate("TryAgainCreatingAcc", {
-				err: "An error occured during the sign in process, please try again!",
-				msg: "You are not logged in.",
-			});
+			navigateToTreasurerHomeScreen();
 		}
-	};
-	const navigateToTreasurerHomeScreen = () => {
-		navigation.navigate("TreasurerHomeScreen");
 	};
 
 	return (
@@ -92,7 +89,6 @@ const TreasurerSignIn = ({ navigation }) => {
 						activeOpacity={0.7}
 						onPress={() => {
 							handlePress();
-							navigateToTreasurerHomeScreen();
 						}}
 					>
 						<Text style={styles.textBtn}>Sign In</Text>
