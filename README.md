@@ -2,12 +2,12 @@
 
 Welcome to the third sprint of our project, Club Cents, a Tennis Club Membership Application! This sprint marks another step forward in our journey toward creating a software solution for managing recreational club memberships.
 
-## Contact:
-* Aamna Amir - aamna.amir@torontomu.ca
-* Reyhan Emik - remik@torontomu.ca
-* Rana Hamood - rana.hamood@torontomu.ca
-* Theresa Killam - theresa.killam@torontomu.ca
-* Sitara Rezaee - sitara.rezaee@torontomu.ca
+## Contributors:
+* Aamna Aamir 
+* Reyhan Emik 
+* Rana Hamood 
+* Theresa Killam
+* Sitara Rezaee 
 
 **Project** **Description:**
 
