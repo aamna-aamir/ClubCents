@@ -35,7 +35,6 @@ const CoachInvoice = ({navigation, route}) => {
       </View>
 
       <View style={styles.confirmedM}>
-        <Text style={styles.textM}>Upcoming Sessions:</Text>
         <Text style={styles.textMInB}>      Class                                  Duration</Text>
         <Text style={styles.textMIn}> Intro to Stokes                                 2 hrs</Text>
         <Text style={styles.textMInTXT}> Tactical Training                               2 hrs</Text>
