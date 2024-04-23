@@ -58,4 +58,4 @@ This module does not offer any menu options or customizable settings. There is n
 
 ## License
 
-Distributed under the STARR License.
+Distributed under the STARR (Simple Tiny Awesome Rights Reserved) License. 
